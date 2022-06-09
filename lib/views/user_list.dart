@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_crud/components/user_tile.dart';
 import 'package:provider/provider.dart';
+import '../models/user.dart';
 import '../provider/users.dart';
 
 class UserList extends StatelessWidget {
@@ -9,6 +10,7 @@ class UserList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //final users = {...DUMMY_USERS};
+    //final users = Provider.of<Users>(context, listen: false); //caso queira ignorar a atualização
     final users = Provider.of<Users>(context);
 
     return Scaffold(
@@ -17,7 +19,15 @@ class UserList extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: () {},
+            onPressed: () {
+              // users.put(
+              //   const User(
+              //     name: 'teste name',
+              //     email: 'teste e-mail',
+              //     avatarUrl: 'teste avatar',
+              //   ),
+              // );
+            },
           ),
         ],
       ),
