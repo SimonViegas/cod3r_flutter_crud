@@ -19,15 +19,7 @@ class UserList extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: () {
-              // users.put(
-              //   const User(
-              //     name: 'teste name',
-              //     email: 'teste e-mail',
-              //     avatarUrl: 'teste avatar',
-              //   ),
-              // );
-            },
+            onPressed: () {},
           ),
         ],
       ),

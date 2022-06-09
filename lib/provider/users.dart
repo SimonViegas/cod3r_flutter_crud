@@ -26,7 +26,7 @@ class Users with ChangeNotifier {
     }
 
     if (user.id != null &&
-        user.id.toString().trim().isEmpty &&
+        user.id.toString().trim().isNotEmpty &&
         _items.containsKey(user.id)) {
       _items.update(
         user.id.toString(),
@@ -51,5 +51,12 @@ class Users with ChangeNotifier {
     }
 
     notifyListeners();
+  }
+
+  void remove(User? user) {
+    if (user != null && user.id != null) {
+      _items.remove(user.id);
+      notifyListeners();
+    }
   }
 }
