@@ -1,12 +1,12 @@
 import 'package:flutter_crud/models/user.dart';
 
+// ignore: constant_identifier_names
 const DUMMY_USERS = {
   '1': User(
     id: '1',
-    name: 'Maria',
-    email: 'maria@alunos.com.br',
-    avatarUrl:
-        'https://cdn.pixabay.com/photo/2020/04/15/17/32/medical-5047582_1280.png',
+    name: 'Simon',
+    email: 'simon@github.com.br',
+    avatarUrl: 'https://avatars.githubusercontent.com/SimonViegas',
   ),
   '2': User(
     id: '2',
